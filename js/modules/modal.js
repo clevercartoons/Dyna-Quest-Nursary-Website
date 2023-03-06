@@ -12,16 +12,16 @@
  **/
 "use strict";
 
-import Swal from 'sweetalert2/dist/sweetalert2.js'
+import Swal from "sweetalert2/dist/sweetalert2.js";
 import { validateForm } from "./forms";
 
 export function initModal(settings, customPopupClass) {
     Swal.fire({
         showClass: {
-            popup: 'fadeIn'
+            popup: "fadeIn",
         },
         hideClass: {
-            popup: 'fadeOut'
+            popup: "fadeOut",
         },
         showConfirmButton: false,
         showCloseButton: true,
@@ -29,25 +29,27 @@ export function initModal(settings, customPopupClass) {
                 <i class="icon-close"></i>
             `,
         customClass: {
-            container: 'modal',
-            popup: customPopupClass ? `modal_popup ${customPopupClass}` : 'modal_popup',
-            closeButton: 'modal_popup-close',
-            htmlContainer: 'modal_popup-content',
+            container: "modal",
+            popup: customPopupClass ?
+                `modal_popup ${customPopupClass}` :
+                "modal_popup",
+            closeButton: "modal_popup-close",
+            htmlContainer: "modal_popup-content",
         },
-        ...settings
-    })
+        ...settings,
+    });
 }
 
-export function drawTeamPopup(selector = '.team_list-item') {
+export function drawTeamPopup(selector = ".team_list-item") {
     const triggerElems = document.querySelectorAll(selector);
     const names = document.querySelectorAll(`${selector} .name`);
     const professions = document.querySelectorAll(`${selector} .profession`);
 
     triggerElems.forEach((el, i) => {
         let imgSrc = el.dataset.media;
-        el.addEventListener('click', () => {
+        el.addEventListener("click", () => {
             initModal({
-                html: `
+                    html: `
                     <div class="wrapper d-md-flex align-items-start align-items-lg-stretch">
                         <div class="media">
                             <picture>
@@ -97,29 +99,31 @@ export function drawTeamPopup(selector = '.team_list-item') {
                             <a class="main_btn" href="SMS.html">View SMS <i class="icon-arrow-right-solid icon"></i></a>
                         </div>
                     </div> 
-            `
-            }, 'modal_popup--team')
-        })
-    })
+            `,
+                },
+                "modal_popup--team"
+            );
+        });
+    });
 }
 
 export function drawSingUpPopop() {
-    const trigger = document.getElementById('signUpTrigger');
+    const trigger = document.getElementById("signUpTrigger");
 
-    trigger.addEventListener('click', () => {
+    trigger.addEventListener("click", () => {
         initModal({
-            html: `
+                html: `
                 <h2 class="title">Registration</h2>
                 <p class="text">
-                    The intensive course is now open, which starts on January 8. 
-                    You will receive detailed information on admission by mail immediately after registration
+                    Ready to take your school administration to the next level? Sign up for Dyna Quest today and experience the power of our comprehensive school management system. With easy setup, intuitive features, and affordable pricing, you can streamline your administrative tasks, save time, and focus on what really matters - providing a high-quality education to your students. Don't wait - register now and join the Dyna Quest community!
                 </p>
-                <h5 class="subtitle">30 day Free Trial for Lessons and Library</h5>
+                <h5 class="subtitle">30 day Free Trial</h5>
                 <p class="text">our consultant will contact you to clarify further details</p>
                 <form class="registration_form d-flex flex-column align-items-center" action="#" method="post"
                   data-type="registration">
                     <input class="field required" type="text" data-type="email" placeholder="Email">
                     <input class="field required" type="text" placeholder="Name">
+                    
                     <div class="wrapper">
                         <div class="checkbox">
                             <input type="checkbox" name="dataProcessing" id="dataProcessing" checked>
@@ -132,7 +136,9 @@ export function drawSingUpPopop() {
                     </button>
                 </form>
             `,
-        }, 'modal_popup--register')
+            },
+            "modal_popup--register"
+        );
         validateForm('[data-type="registration"]');
-    })
+    });
 }
