@@ -1,11 +1,11 @@
 /**
- * Edison
- * Edison is an Online Education Website Template Kit
- * Exclusively on https://1.envato.market/edison-html
+ * Dyna Quest
+ * Dyna Quest is an Online Education Website Template Kit
+ * Exclusively on https://1.envato.market/Dyna Quest-html
  *
  * @encoding        UTF-8
  * @version         1.0.0
- * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @copyright       (C) 2018 - 2022 A. KOMANE ( https://merkulov.design/ ). All rights reserved.
  * @license         Envato License https://1.envato.market/KYbje
  * @contributors    Lamber Lilith (winter.rituel@gmail.com)
  * @support         help@merkulov.design
@@ -13,7 +13,7 @@
 "use strict";
 
 import Swal from 'sweetalert2/dist/sweetalert2.js'
-import {validateForm} from "./forms";
+import { validateForm } from "./forms";
 
 export function initModal(settings, customPopupClass) {
     Swal.fire({
@@ -87,14 +87,14 @@ export function drawTeamPopup(selector = '.team_list-item') {
                             <div class="main_about d-flex flex-column">
                                 <span class="main_about-item">
                                     <i class="icon-book-solid icon"></i>
-                                    <span class="text">12</span> Instructor  Courses
+                                    <span class="text">12</span> Instructor  SMS
                                 </span>
                                 <span class="main_about-item">
                                     <i class="icon-users icon"></i>
                                     <span class="text">58,586</span> Learners
                                 </span>
                             </div>
-                            <a class="main_btn" href="courses.html">View courses <i class="icon-arrow-right-solid icon"></i></a>
+                            <a class="main_btn" href="SMS.html">View SMS <i class="icon-arrow-right-solid icon"></i></a>
                         </div>
                     </div> 
             `
