@@ -185,8 +185,8 @@ main>.underlay {
     width: 100%;
     top: 0;
     left: 0;
-    background: -o-linear-gradient(221.29deg, rgba(255, 255, 255, .0001) -62.66%, #fcf9f9 71.21%), -o-linear-gradient(38.61deg, #6a11cb 20.14%, #2575fc 93.63%), url(../img/placeholder.jpg) center right/cover no-repeat;
-    background: linear-gradient(228.71deg, rgba(255, 255, 255, .0001) -62.66%, #fcf9f9 71.21%), linear-gradient(51.39deg, #6a11cb 20.14%, #2575fc 93.63%), url(../img/placeholder.jpg) center right/cover no-repeat;
+    background: -o-linear-gradient(221.29deg, rgba(255, 255, 255, .0001) -62.66%, #fcf9f9 71.21%), -o-linear-gradient(38.61deg, #6a11cb 20.14%, #2575fc 93.63%), url(../img/placeholder2.jpg) center right/cover no-repeat;
+    background: linear-gradient(228.71deg, rgba(255, 255, 255, .0001) -62.66%, #fcf9f9 71.21%), linear-gradient(51.39deg, #6a11cb 20.14%, #2575fc 93.63%), url(../img/placeholder2.jpg) center right/cover no-repeat;
     background-blend-mode: lighten, color, normal;
     max-height: 1480px;
     height: 100%

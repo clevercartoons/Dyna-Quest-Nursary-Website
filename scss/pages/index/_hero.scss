@@ -10,19 +10,17 @@
  * @contributors    Lamber Lilith (winter.rituel@gmail.com)
  * @support         help@merkulov.design
  **/
-// hero section
 
-main > .underlay {
-    background: url("../img/placeholder.jpg") no-repeat center / cover;
+// hero section
+main>.underlay {
+    background: url("../img/placeholder2.jpg") no-repeat center / cover;
 }
 
 .hero {
     text-align: center;
     padding: 80px 0 20px;
-
     &_media {
         margin-top: 20px;
-
         lottie-player {
             left: 50%;
             min-width: 400px;
@@ -30,45 +28,36 @@ main > .underlay {
             transform: translateX(-50%);
         }
     }
-
     &_content {
         &-header {
             margin-bottom: 30px;
         }
-
         &-rating {
             margin-bottom: 15px;
-
             .text {
                 margin-bottom: 10px;
                 color: $accent;
             }
         }
-
         &-text {
             margin-bottom: 40px;
         }
-
         &-action {
             .btn {
                 width: 100%;
-
                 &:first-of-type {
                     margin-bottom: 10px;
                 }
-
                 &--highlight {
                     border: 1px solid $accentAlt;
                     overflow: hidden;
                     position: relative;
-
                     .text {
                         position: relative;
                         z-index: 20;
                         color: $accentAlt;
                         font-size: 14px;
                     }
-
                     &:after {
                         content: '';
                         position: absolute;
@@ -81,14 +70,12 @@ main > .underlay {
                         opacity: 0;
                         z-index: 1;
                     }
-
-                    &:hover, &:focus {
+                    &:hover,
+                    &:focus {
                         border-image: linear-gradient(111.41deg, #FF0844 24.85%, #FF8B67 95.39%);
-
                         &:after {
                             opacity: 1;
                         }
-
                         .text {
                             color: #fff;
                         }
@@ -100,53 +87,43 @@ main > .underlay {
 }
 
 // media queries
-
 @media screen and (min-width: 575.98px) {
     .hero {
         text-align: left;
         padding-bottom: 0;
-
         &_media {
             margin-top: 0;
-
             lottie-player {
                 min-width: 600px;
             }
         }
-
         &_content {
             &-header {
                 max-width: 500px;
                 margin-bottom: 15px;
             }
-
             &-rating {
                 margin-bottom: 30px;
-
                 .text {
                     margin-bottom: 0;
                     line-height: 1;
                     margin-right: 10px;
                 }
             }
-
             &-text {
                 margin-bottom: 35px;
             }
-
             &-action {
                 .btn {
                     width: unset;
                     max-width: unset;
                     margin: 0;
                     padding: 0;
-
                     &:first-of-type {
                         margin-bottom: 0;
                         margin-right: 15px;
                         width: 164px;
                     }
-
                     &--highlight {
                         width: 194px;
                     }
@@ -159,14 +136,11 @@ main > .underlay {
 @media screen and (min-width: 767.98px) {
     .hero {
         padding-top: 100px;
-
         &_media {
-
             lottie-player {
                 min-width: 800px;
             }
         }
-
         &_content {
             &-text {
                 max-width: 450px;
@@ -180,7 +154,6 @@ main > .underlay {
     .hero {
         position: relative;
         padding: 200px 0 120px;
-
         &_media {
             width: 1390px;
             height: 990px;
@@ -189,16 +162,13 @@ main > .underlay {
             top: -150px;
             z-index: -1;
         }
-
         &_content {
             &-header {
                 margin-bottom: 30px;
             }
-
             &-rating {
                 margin-bottom: 20px;
             }
-
             &-text {
                 max-width: 500px;
             }
@@ -219,7 +189,6 @@ main > .underlay {
         &_media {
             right: -400px;
         }
-
         &_content {
             width: 630px;
         }

@@ -10,82 +10,69 @@
  * @contributors    Lamber Lilith (winter.rituel@gmail.com)
  * @support         help@merkulov.design
  **/
-// sale section
 
+// sale section
 .sale {
     margin-top: 110px;
     padding: 80px 0;
-    background: url("../img/placeholder.jpg") no-repeat center / cover;
+    background: url("../img/placeholder2.jpg") no-repeat center / cover;
     position: relative;
-
     &_deco {
         display: none;
     }
-
     &_content {
         position: relative;
         z-index: 10;
-
         .content {
             &_percent {
                 display: none;
             }
-
             &_text {
                 margin-bottom: 20px;
                 text-align: center;
-
-                .title, .text {
+                .title,
+                .text {
                     color: #fff;
                 }
-
                 .text {
                     margin-top: 5px;
                     font-weight: 400;
                 }
             }
         }
-
         .form {
             .field {
                 color: $textColor;
                 margin-bottom: 10px;
             }
-
             .btn {
                 height: 55px;
             }
         }
     }
-
 }
 
 // media queries
-
 @media screen and (min-width: 575.98px) {
     .sale {
         &_content {
             .content {
                 max-width: 570px;
                 margin: 0 auto;
-
                 &_text {
                     margin-bottom: 20px;
                     text-align: left;
                 }
             }
-
             .form {
                 max-width: 570px;
                 margin: 0 auto;
-
                 .field {
                     width: calc(100% - 195px);
                     margin-bottom: 0;
                     border-top-right-radius: 0;
                     border-bottom-right-radius: 0;
                 }
-
                 .btn {
                     width: 195px;
                     padding: 0;
@@ -100,12 +87,10 @@
 @media screen and (min-width: 991.98px) {
     .sale {
         margin-top: 140px;
-
         &_content {
             .content {
                 max-width: 570px;
                 margin: 0 auto 30px;
-
                 &_percent {
                     display: inline-flex;
                     font-weight: 700;
@@ -116,7 +101,6 @@
                     margin-right: 20px;
                     position: relative;
                     color: #fff;
-
                     &:after {
                         content: '';
                         position: absolute;
@@ -128,19 +112,15 @@
                         background: #DAB9FF;
                     }
                 }
-
                 &_text {
                     margin-bottom: 0;
-
                     .title {
                         line-height: 1;
-
                         .percent {
                             display: none;
                         }
                     }
                 }
-
             }
         }
     }
@@ -149,7 +129,6 @@
 @media screen and (min-width: 1199.98px) {
     .sale {
         margin-top: 120px;
-
         &_deco {
             display: block;
             position: absolute;
@@ -157,7 +136,6 @@
             width: 100%;
             top: 0;
             left: 0;
-
             img {
                 position: absolute;
                 top: -50%;
@@ -166,7 +144,6 @@
                 height: 727px;
             }
         }
-
         &_content {
             max-width: 580px;
             margin-left: auto;

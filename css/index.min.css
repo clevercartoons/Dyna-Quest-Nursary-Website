@@ -1547,7 +1547,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 main>.underlay {
-    background: url(../img/placeholder.jpg) center/cover no-repeat
+    background: url(../img/placeholder2.jpg) center/cover no-repeat
 }
 
 .hero {
@@ -2287,7 +2287,7 @@ main>.underlay {
 
 .banner {
     padding: 60px 0 0;
-    background: url(../img/placeholder.jpg) center right/cover no-repeat;
+    background: url(../img/placeholder2.jpg) center right/cover no-repeat;
     position: relative
 }
 

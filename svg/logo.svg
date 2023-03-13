@@ -9,16 +9,16 @@
 <path opacity="0.231" d="M1 8L13 1" stroke="white" stroke-width="1.228"/>
 <defs>
 <linearGradient id="paint0_linear_42_1776" x1="-1.49531" y1="13.3049" x2="1.95277" y2="18.0893" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#031A7D"/>
-<stop offset="1" stop-color="#5A04B7"/>
+<stop offset="0" stop-color="#7d0360"/>
+<stop offset="1" stop-color="#b70461"/>
 </linearGradient>
 <linearGradient id="paint1_linear_42_1776" x1="-2.99244" y1="16.1074" x2="-0.575519" y2="26.849" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#031A7D"/>
-<stop offset="1" stop-color="#5A04B7"/>
+<stop offset="0" stop-color="#7d0348"/>
+<stop offset="1" stop-color="#b70428"/>
 </linearGradient>
 <linearGradient id="paint2_linear_42_1776" x1="12.5" y1="28" x2="12.5" y2="1" gradientUnits="userSpaceOnUse">
-<stop offset="0" stop-color="#6A11CB"/>
-<stop offset="1" stop-color="#2575FC"/>
+<stop offset="0" stop-color="#cb1136"/>
+<stop offset="1" stop-color="#fc2525"/>
 </linearGradient>
 </defs>
 </svg>
