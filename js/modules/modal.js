@@ -31,8 +31,7 @@ export function initModal(settings, customPopupClass) {
         customClass: {
             container: "modal",
             popup: customPopupClass ?
-                `modal_popup ${customPopupClass}` :
-                "modal_popup",
+                `modal_popup ${customPopupClass}` : "modal_popup",
             closeButton: "modal_popup-close",
             htmlContainer: "modal_popup-content",
         },
@@ -66,17 +65,17 @@ export function drawTeamPopup(selector = ".team_list-item") {
                             <span class="main_text text">${professions[i].textContent}</span>
                             <ul class="main_socials d-flex align-items-center">
                                 <li class="main_socials-item">
-                                    <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <a class="link" href="https://forms.gle/VMgmDHESfummVFMCA" target="_blank" rel="noopener noreferrer">
                                         <i class="icon-facebook icon"></i>
                                     </a>
                                 </li>
                                 <li class="main_socials-item">
-                                    <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <a class="link" href="https://forms.gle/VMgmDHESfummVFMCA" target="_blank" rel="noopener noreferrer">
                                         <i class="icon-youtube-play icon"></i>
                                     </a>
                                 </li>
                                 <li class="main_socials-item">
-                                    <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <a class="link" href="https://forms.gle/VMgmDHESfummVFMCA" target="_blank" rel="noopener noreferrer">
                                         <i class="icon-linkedin-brands icon"></i>
                                     </a>
                                 </li>
@@ -129,7 +128,7 @@ export function drawSingUpPopop() {
                             <input type="checkbox" name="dataProcessing" id="dataProcessing" checked>
                             <label for="dataProcessing">I agree to the terms of data processing. </label>
                         </div>
-                        <a class="link" href="#">Terms and Conditions</a>
+                        <a class="link" href="https://forms.gle/VMgmDHESfummVFMCA">Terms and Conditions</a>
                     </div>
                     <button class="btn btn--gradient" type="submit">
                         <span class="text">Registration</span>
